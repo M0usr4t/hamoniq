@@ -2,7 +2,13 @@
 FROM node:20
 
 # Install Python alongside Node.js
-RUN apt-get update && apt-get install -y python3 python3-pip
+RUN apt-get update && apt-get install -y python3 python3-pip python3-venv
+
+# Create a virtual environment in the container
+RUN python3 -m venv /backend/python/.venv
+
+# Install dependencies inside the virtual environment
+RUN /bin/bash -c "source /backend/python/.venv/bin/activate && pip install -r /backend/python/requirements.txt"
 
 # Set the working directory inside the container
 WORKDIR /app

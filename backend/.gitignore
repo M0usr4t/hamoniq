@@ -25,3 +25,8 @@ dist-ssr
 
 # Environment variables
 .env
+backend/.env
+frontend/.env
+
+# Ignore virtual environment
+python/.venv/
