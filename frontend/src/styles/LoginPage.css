@@ -1,0 +1,65 @@
+/* src/styles/LoginPage.css */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.logo-container {
+  background-color: rgb(215, 222, 250); /* Set the background color */
+  color: #333; /* Set a contrasting text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-name {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.welcome-header {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  padding: 10px 20px;
+  background-color: #1db954; /* Spotify green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #17a148; /* Darker green on hover */
+}
+
+.spotify-icon {
+  width: 24px;
+  height: 24px;
+}
+

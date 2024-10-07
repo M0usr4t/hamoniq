@@ -1,0 +1,125 @@
+/* src/styles/HomePage.css */
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+  
+  .content-container {
+    background-color: rgba(215, 222, 250, 0.8); /* Semi-transparent background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Wider than the login page */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .logo-name {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .welcome-header {
+    font-size: 28px; /* Slightly larger for the home page */
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1db954; /* Spotify green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #17a148; /* Darker green on hover */
+  }
+  
+  .genre-multiselect .multiselect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .genre-multiselect p {
+    color: #333;
+  }
+  
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .checkbox-label {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .vibe-dance-container {
+    text-align: center;
+  }
+  
+  .slider-labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .vibe-dance-slider {
+    width: 100%;
+    margin: 0 10px;
+  }

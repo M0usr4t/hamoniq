@@ -1,0 +1,38 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app 
+      - backend_node_modules:/app/node_modules # run npm install through container for linux dependencies
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mysql
+  
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app 
+      - frontend_node_modules:/app/node_modules  # run npm install through container for linux dependencies
+    environment:
+      - NODE_ENV=development
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  volumes:
+  backend_node_modules:  # Define the backend node_modules volume
+  frontend_node_modules:  # Define the frontend node_modules volume
+  mysql-data:  # Define the MySQL volume for persistent storage
